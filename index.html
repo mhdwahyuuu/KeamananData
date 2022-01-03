@@ -54,7 +54,13 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Beranda</a></li>
+          <li class="dropdown"><a href="#"><span>Kriptografi Modern</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#simetris">Asimetris</a></li>
+              <li><a href="#asimetris">Simetris</a></li>
+              <li><a href="#hybrida">Hybrida</a></li>
+            </ul>
+          </li>
           <li class="dropdown"><a href="#"><span>Simulasi</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="RSA.html">RSA</a></li>
@@ -110,84 +116,6 @@
           <p class="justify" style="text-indent: 0.5in;">Enkripsi modern berbeda dengan enkripsi konvensional. Enkripsi modern sudah menggunakan komputer untuk pengoperasiannya, berfungsi untuk mengamankan data baik yang ditransfer melalui jaringan komputer maupun yang bukan. Hal ini sangat berguna untuk melindungi privacy, data integrity, authentication, dan non-repudiation. Perkembangan algoritma kriptografi modern berbasis bit didorong oleh penggunaan komputer digital yang merepresentasikan data dalam bentuk biner.</p>
           <p class="justify" style="text-indent: 0.5in;">Pengirim pesan akan mengatur sandi pada pesan awal yang nantinya menjadi kode dan hanya bisa dibaca oleh penerima pesan tersebut. Kemudian, penerima pesan akan mengembalikan kode-kode yang didapatkan menjadi pesan asli.</p>
         </div>
-
-        
-        <div class="row no-gutters">
-          <div class="col-xl-7 d-flex align-items-stretch order-2 order-lg-1">
-            <div class="content d-flex flex-column justify">
-              <div class="row">
-                <div class="col-md-12 icon-box" data-aos="fade-up">
-                  <h4>Algoritma Simetrisss</h4>
-                  <p class="justify"  style="text-indent: 0.5in;">Symmetric cryptosystem atau kriptografi 
-                    simetris atau disebut juga algoritma kriptografi 
-                    konvensional adalah algoritma yang menggunakan 
-                    kunci untuk proses enkripsi sama dengan kunci 
-                    untuk proses dekripsi. Algoritma kriptografi simetris 
-                    dibagi menjadi 2 kategori yaitu algoritma aliran
-                    (Stream Ciphers) dan algoritma blok (Block
-                    Ciphers). Pada algoritma aliran, proses
-                    penyandiannya berorientasi pada satu bit atau satu
-                    byte data. Sedang pada algoritma blok, proses
-                    penyandiannya berorientasi pada sekumpulan bit
-                    atau byte data (per blok). 
-                    <p style="text-indent: 0.5in;">Ini adalah jenis kriptografi yang paling umum 
-                      dipergunakan. Kunci untuk membuat pesan yang 
-                      disandikan sama dengan kunci untuk membuka 
-                      pesan yang disandikan itu. Jadi pembuat pesan dan 
-                      penerimanya harus memiliki kunci yang sama persis. 
-                      Siapapun yang memiliki kunci tersebut – termasuk 
-                      pihak-pihak yang tidak diinginkan – dapat membuat 
-                      dan membongkar rahasia ciphertext. Problem yang 
-                      paling jelas disini terkadang bukanlah masalah 
-                      pengiriman ciphertext-nya, melainkan masalah 
-                      bagaimana menyampaikan kunci simetris tersebut 
-                      kepada pihak yang diinginkan. Contoh algoritma 
-                      kunci simetris yang terkenal adalah DES (Data 
-                      EncryptionStandard) dan RC-4, sebagaimana 
-                      ditunjukkan pada gambar berikut :
-                    </p>
-                      <p class="center"><img src="assets/img/gambar.jpeg" class="img-fluid" alt=""></p>
-                      <p class="justify">
-                        Ada beberapa kelebihan menggunakan kunci 
-                        simetris yang sudah diketahui yaitu :
-                        <br><br>
-                        1. Kecepatan Operasi lebih tinggi bila dibandingkan dengan 
-                        algoritma asimetrik walupun hal ini berbanding lurus 
-                        dengan penambahan ukuran file
-                        <br><br>
-                        2. Enkripsi/dekripsi bergantung pada besarnya ukuran 
-                        file, semakin besar ukuran file semakin banyak waktu 
-                        yang dibutuhkan untuk enkripsi/dekripsi
-                        <br><br>
-                        3. Karena kecepatannya yang cukup tinggi, maka dapat 
-                          digunakan pada sistem real-time. 
-                        <br><br>
-                        Kelemahan menggunakan kunci simetris Setiap pengiriman pesan 
-                        dengan pengguna yang berbeda dibutuhkan kunci 
-                        yang berbeda juga, sehingga akan terjadi kesulitan 
-                        dalam manajemen kunci tersebut, dan Permasalahan 
-                        dalam pengiriman kunci itu sendiri yang disebut “ key
-                        distribution problem”.</p>
-                  </p>
-
-                    <!-- <p><b>1. Algoritma aliran (Stream Ciphers) </b></p>
-                    <p class="justify" style="text-indent: 0.2in;">Pada algoritma aliran, proses 
-                    penyandiannya berorientasi pada satu bit atau satu 
-                    byte data. </class>
-                    <p><b>1. Algoritma blok (Block Ciphers) </b></p>
-                    <p class="justify" style="text-indent: 0.2in;">Pada algoritma aliran, proses  -->
-                    
-                      </class>
-                    </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="assets/img/features.svg" class="img-fluid" alt="">
-          </div>
-        </div>
-
       </div>
     </section><!-- End App Features Section -->
 
@@ -195,13 +123,93 @@
     <section id="details" class="details">
       <div class="container">
 
+        <section id="simetris" class="simetris">
+          <div class="row no-gutters">
+            <div class="col-xl-7 d-flex align-items-stretch order-2 order-lg-1">
+              <div class="content d-flex flex-column justify">
+                <div class="row">
+                  <div class="col-md-12 icon-box" data-aos="fade-up">
+                    <h3>Algoritma Simetris</h3>
+                    <p class="justify">Symmetric cryptosystem atau kriptografi 
+                      simetris atau disebut juga algoritma kriptografi 
+                      konvensional adalah algoritma yang menggunakan 
+                      kunci untuk proses enkripsi sama dengan kunci 
+                      untuk proses dekripsi. Algoritma kriptografi simetris 
+                      dibagi menjadi 2 kategori yaitu algoritma aliran
+                      (Stream Ciphers) dan algoritma blok (Block
+                      Ciphers). Pada algoritma aliran, proses
+                      penyandiannya berorientasi pada satu bit atau satu
+                      byte data. Sedang pada algoritma blok, proses
+                      penyandiannya berorientasi pada sekumpulan bit
+                      atau byte data (per blok). 
+                      </p>
+                      <p style="justify">Ini adalah jenis kriptografi yang paling umum 
+                        dipergunakan. Kunci untuk membuat pesan yang 
+                        disandikan sama dengan kunci untuk membuka 
+                        pesan yang disandikan itu. Jadi pembuat pesan dan 
+                        penerimanya harus memiliki kunci yang sama persis. 
+                        Siapapun yang memiliki kunci tersebut – termasuk 
+                        pihak-pihak yang tidak diinginkan – dapat membuat 
+                        dan membongkar rahasia ciphertext. Problem yang 
+                        paling jelas disini terkadang bukanlah masalah 
+                        pengiriman ciphertext-nya, melainkan masalah 
+                        bagaimana menyampaikan kunci simetris tersebut 
+                        kepada pihak yang diinginkan. Contoh algoritma 
+                        kunci simetris yang terkenal adalah DES (Data 
+                        EncryptionStandard) dan RC-4, sebagaimana 
+                        ditunjukkan pada gambar berikut :
+                      </p>
+                        <p class="center"><img src="assets/img/gambar.jpeg" class="img-fluid" alt=""></p>
+                        <p class="justify">
+                          Ada beberapa kelebihan menggunakan kunci 
+                          simetris yang sudah diketahui yaitu :
+                          <br><br>
+                          1. Kecepatan Operasi lebih tinggi bila dibandingkan dengan 
+                          algoritma asimetrik walupun hal ini berbanding lurus 
+                          dengan penambahan ukuran file
+                          <br><br>
+                          2. Enkripsi/dekripsi bergantung pada besarnya ukuran 
+                          file, semakin besar ukuran file semakin banyak waktu 
+                          yang dibutuhkan untuk enkripsi/dekripsi
+                          <br><br>
+                          3. Karena kecepatannya yang cukup tinggi, maka dapat 
+                            digunakan pada sistem real-time. 
+                          <br><br>
+                          Kelemahan menggunakan kunci simetris Setiap pengiriman pesan 
+                          dengan pengguna yang berbeda dibutuhkan kunci 
+                          yang berbeda juga, sehingga akan terjadi kesulitan 
+                          dalam manajemen kunci tersebut, dan Permasalahan 
+                          dalam pengiriman kunci itu sendiri yang disebut “ key
+                          distribution problem”.</p>
+                    </p>
+  
+                      <!-- <p><b>1. Algoritma aliran (Stream Ciphers) </b></p>
+                      <p class="justify" style="text-indent: 0.2in;">Pada algoritma aliran, proses 
+                      penyandiannya berorientasi pada satu bit atau satu 
+                      byte data. </class>
+                      <p><b>1. Algoritma blok (Block Ciphers) </b></p>
+                      <p class="justify" style="text-indent: 0.2in;">Pada algoritma aliran, proses  -->
+                      
+                        </class>
+                      </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="image col-xl-5 d-flex align-items-stretch justify-content-center order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+              <img src="assets/img/features.svg" class="img-fluid" alt="">
+            </div>
+          </div>
+          </section>
+
+        <section id="asimetris" class="asimetris">
         <div class="row content">
           <div class="col-md-4" data-aos="fade-right">
             <img src="assets/img/details-1.png" class="img-fluid" alt="">
           </div>
           <div class="col-md-8 pt-4" data-aos="fade-up">
-            <h4>Algoritma Simetrisss</h4>
-            <p>
+            <h3>Algoritma Simetris</h3>
+            <p class="justify">
               Pada pertengahan tahun 70-an Whitfield Diffie
               dan Martin Hellman menemukan teknik enkripsi
               asimetris yang merevolusi dunia kriptografi. Kunci
@@ -234,27 +242,33 @@
             </p>
           </div>
         </div>
+        </section>
 
+        <section id="hybrida" class="hybrida">
         <div class="row content">
           <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
             <img src="assets/img/details-2.png" class="img-fluid" alt="">
           </div>
           <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
-            <h3>Corporis temporibus maiores provident</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+            <h3>Algoritma Hybrida</h3>
+            <p class="justify">
+              Kriptografi kunci publik (disebut juga kriptografi asimetris) adalah sistem kriptografi yang menggunakan sepasang kunci,
+              yaitu kunci publik yang bisa disebarkan dan kunci pribadi yang hanya diketahui oleh pemilik.
+              Pembuatan kunci tersebut bergantung pada algoritme kriptografi yang menggunakan sifat matematis untuk menghasilkan fungsi satu arah.
             </p>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
+            <p class="justify">
+              Keamanannya secara efektif hanya berasal dari kunci pribadi yang disimpan dengan baik; kunci publik dapat disebarkan tanpa mengurangi keamanannya.
+              Dalam sistem tersebut, tiap orang dapat mengenkripsi pesan dengan kunci publik penerima. Namun, hasil enkripsi tersebut hanya bisa didekripsi oleh penerima dengan kunci pribadi.
+              Hal ini memungkinkan untuk, misalnya, mengirim pesan kepada server dengan mengenkripsinya memakai kunci publiknya. Pesan tersebut dapat berisi kunci baru yang akan dipakai untuk kriptografi simetris.
             </p>
-            <p>
-              Inventore id enim dolor dicta qui et magni molestiae. Mollitia optio officia illum ut cupiditate eos autem. Soluta dolorum repellendus repellat amet autem rerum illum in. Quibusdam occaecati est nisi esse. Saepe aut dignissimos distinctio id enim.
+            <p class="justify">
+              Sekarang, klien dan server dapat saling berkirim pesan dengan kunci simetris baru tersebut. Hal ini memiliki keuntungan karena dapat memanfaatkan laju kriptografi simetris yang lebih tinggi daripada kriptografi asimetris.
+              Selain untuk enkripsi, kriptografi kunci publik juga bisa dipakai untuk autentikasi. Pengirim pesan dapat menambahkan tanda tangan digital pada akhir pesan.
+              Siapa pun dapat memeriksa keaslian pesan dari pengirim dengan membandingkannya dengan kunci publik pengirim pesan. Bila gabungan pesan dan kunci publik cocok dengan tanda tangan digitalnya, pesan tersebut benar dibuat oleh pengirim pesan.
             </p>
           </div>
         </div>
+        </section>
 
     <div class="container py-4">
       <div class="copyright">
