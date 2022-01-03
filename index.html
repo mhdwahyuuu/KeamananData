@@ -4,7 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+  <style type="text/css">
+    .left    { text-align: left;}
+    .right   { text-align: right;}
+    .center  { text-align: center;}
+    .justify { text-align: justify;}
+ </style>
   <title>Keamanan Data</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -52,10 +57,9 @@
           <li><a class="nav-link scrollto active" href="#hero">Beranda</a></li>
           <li class="dropdown"><a href="#"><span>Kriptografi Modern</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Pendahuluan</a></li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="AlgoritmaSimetris.html">Algoritma Simetris</a></li>
+              <li><a href="AlgoritmaAsimetris.html">Algoritma Asimetris</a></li>
+              <li><a href="AlgoritmaHibrida.html">Algoritma Hibrida</a></li>
             </ul>
           </li>
           <li class="dropdown"><a href="#"><span>Public Key</span> <i class="bi bi-chevron-down"></i></a>
@@ -101,46 +105,84 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Pembahasan materi</h2>
-          <h3>Kriptografi Modern</h3>
-          <p>Algoritma kriptograafi modern umumnya beroperasi dalam mode bit ketimbang mode karakter (seperti yang dilakukan pada cipher sibstitusi atau cipher transposisi dari algoritma kriptografi klasik).  Operasi dalam mode bit berarti semua data dan informasi  (baik kunci, plaintext maupun ciphertext) dinyatakan dalam rangkaian (string) bit binner, 0 dan 1. Algoritma enkripsi dan deskripsi memproses semua data dan informasi dalam bentuk mode bit. Rangkaian bit yang menyatakan plaintext dienkripsi menjadi ciphertext  dalam bentuk rangkaian bit, demikian sebaliknya.</p>
-          <p>Enkripsi modern berbeda dengan enkripsi konvensional. Enkripsi modern sudah menggunakan komputer untuk pengoperasiannya, berfungsi untuk mengamankan data baik yang ditransfer melalui jaringan komputer maupun yang bukan. Hal ini sangat berguna untuk melindungi privacy, data integrity, authentication, dan non-repudiation. Perkembangan algoritma kriptografi modern berbasis bit didorong oleh penggunaan komputer digital yang merepresentasikan data dalam bentuk biner.</p>
-          <p>Pengirim pesan akan mengatur sandi pada pesan awal yang nantinya menjadi kode dan hanya bisa dibaca oleh penerima pesan tersebut. Kemudian, penerima pesan akan mengembalikan kode-kode yang didapatkan menjadi pesan asli.</p>
+          <h2>Kriptografi Modern</h2>
+          <p class="justify" style="text-indent: 0.5in;">Algoritma kriptograafi modern umumnya beroperasi dalam mode bit ketimbang mode karakter (seperti yang dilakukan pada cipher sibstitusi atau cipher transposisi dari algoritma kriptografi klasik).  Operasi dalam mode bit berarti semua data dan informasi  (baik kunci, plaintext maupun ciphertext) dinyatakan dalam rangkaian (string) bit binner, 0 dan 1. Algoritma enkripsi dan deskripsi memproses semua data dan informasi dalam bentuk mode bit. Rangkaian bit yang menyatakan plaintext dienkripsi menjadi ciphertext  dalam bentuk rangkaian bit, demikian sebaliknya.</p>
+          <p class="justify" style="text-indent: 0.5in;">Enkripsi modern berbeda dengan enkripsi konvensional. Enkripsi modern sudah menggunakan komputer untuk pengoperasiannya, berfungsi untuk mengamankan data baik yang ditransfer melalui jaringan komputer maupun yang bukan. Hal ini sangat berguna untuk melindungi privacy, data integrity, authentication, dan non-repudiation. Perkembangan algoritma kriptografi modern berbasis bit didorong oleh penggunaan komputer digital yang merepresentasikan data dalam bentuk biner.</p>
+          <p class="justify" style="text-indent: 0.5in;">Pengirim pesan akan mengatur sandi pada pesan awal yang nantinya menjadi kode dan hanya bisa dibaca oleh penerima pesan tersebut. Kemudian, penerima pesan akan mengembalikan kode-kode yang didapatkan menjadi pesan asli.</p>
         </div>
 
         <div class="row no-gutters">
           <div class="col-xl-7 d-flex align-items-stretch order-2 order-lg-1">
-            <div class="content d-flex flex-column justify-content-center">
+            <div class="content d-flex flex-column justify">
               <div class="row">
-                <div class="col-md-6 icon-box" data-aos="fade-up">
+                <div class="col-md-12 icon-box" data-aos="fade-up">
                   <i class="bx bx-receipt"></i>
-                  <h4>Corporis voluptates sit</h4>
-                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                </div>
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-                  <i class="bx bx-cube-alt"></i>
-                  <h4>Ullamco laboris nisi</h4>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                </div>
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-                  <i class="bx bx-images"></i>
-                  <h4>Labore consequatur</h4>
-                  <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                </div>
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-                  <i class="bx bx-shield"></i>
-                  <h4>Beatae veritatis</h4>
-                  <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
-                </div>
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-                  <i class="bx bx-atom"></i>
-                  <h4>Molestiae dolor</h4>
-                  <p>Et fuga et deserunt et enim. Dolorem architecto ratione tensa raptor marte</p>
-                </div>
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-                  <i class="bx bx-id-card"></i>
-                  <h4>Explicabo consectetur</h4>
-                  <p>Est autem dicta beatae suscipit. Sint veritatis et sit quasi ab aut inventore</p>
+                  <h4>Algoritma Simetris</h4>
+                  <p class="justify"  style="text-indent: 0.5in;">Symmetric cryptosystem atau kriptografi 
+                    simetris atau disebut juga algoritma kriptografi 
+                    konvensional adalah algoritma yang menggunakan 
+                    kunci untuk proses enkripsi sama dengan kunci 
+                    untuk proses dekripsi. Algoritma kriptografi simetris 
+                    dibagi menjadi 2 kategori yaitu algoritma aliran
+                    (Stream Ciphers) dan algoritma blok (Block
+                    Ciphers). Pada algoritma aliran, proses
+                    penyandiannya berorientasi pada satu bit atau satu
+                    byte data. Sedang pada algoritma blok, proses
+                    penyandiannya berorientasi pada sekumpulan bit
+                    atau byte data (per blok). 
+                    <p style="text-indent: 0.5in;">Ini adalah jenis kriptografi yang paling umum 
+                      dipergunakan. Kunci untuk membuat pesan yang 
+                      disandikan sama dengan kunci untuk membuka 
+                      pesan yang disandikan itu. Jadi pembuat pesan dan 
+                      penerimanya harus memiliki kunci yang sama persis. 
+                      Siapapun yang memiliki kunci tersebut – termasuk 
+                      pihak-pihak yang tidak diinginkan – dapat membuat 
+                      dan membongkar rahasia ciphertext. Problem yang 
+                      paling jelas disini terkadang bukanlah masalah 
+                      pengiriman ciphertext-nya, melainkan masalah 
+                      bagaimana menyampaikan kunci simetris tersebut 
+                      kepada pihak yang diinginkan. Contoh algoritma 
+                      kunci simetris yang terkenal adalah DES (Data 
+                      EncryptionStandard) dan RC-4, sebagaimana 
+                      ditunjukkan pada gambar berikut :
+                      </p>
+                      <p class="center"><img src="assets/img/gambar.jpeg" class="img-fluid" alt=""></p>
+                      <p class="justify">
+                        Ada beberapa kelebihan menggunakan kunci 
+                        simetris yang sudah diketahui yaitu :
+                        <br><br>
+                        1. Kecepatan Operasi lebih tinggi bila dibandingkan dengan 
+                        algoritma asimetrik walupun hal ini berbanding lurus 
+                        dengan penambahan ukuran file
+                        <br><br>
+                        2. Enkripsi/dekripsi bergantung pada besarnya ukuran 
+                        file, semakin besar ukuran file semakin banyak waktu 
+                        yang dibutuhkan untuk enkripsi/dekripsi
+                        <br><br>
+                        3. Karena kecepatannya yang cukup tinggi, maka dapat 
+                          digunakan pada sistem real-time. 
+                        <br><br>
+                        Kelemahan menggunakan kunci simetris Setiap pengiriman pesan 
+                        dengan pengguna yang berbeda dibutuhkan kunci 
+                        yang berbeda juga, sehingga akan terjadi kesulitan 
+                        dalam manajemen kunci tersebut, dan Permasalahan 
+                        dalam pengiriman kunci itu sendiri yang disebut “ key
+                        distribution problem”.
+                      </p>
+                      <p class="justify">
+                        
+                      </p>
+                    </p>
+
+                    <!-- <p><b>1. Algoritma aliran (Stream Ciphers) </b></p>
+                    <p class="justify" style="text-indent: 0.2in;">Pada algoritma aliran, proses 
+                    penyandiannya berorientasi pada satu bit atau satu 
+                    byte data. </class>
+                    <p><b>1. Algoritma blok (Block Ciphers) </b></p>
+                    <p class="justify" style="text-indent: 0.2in;">Pada algoritma aliran, proses  -->
+                    
+                      </class>
+                    </p>
                 </div>
               </div>
             </div>
