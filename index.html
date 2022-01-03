@@ -54,7 +54,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li class="dropdown"><a href="#"><span>Beranda</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="index.html"><span>Beranda</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li class="dropdown"><a href="#"><span>Kriptografi Modern</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
@@ -107,9 +107,21 @@
       <div class="container">
         <div class="section-title">
           <h2>Kriptografi Modern</h2>
-          <p class="justify" style="text-indent: 0.5in;">Algoritma kriptograafi modern umumnya beroperasi dalam mode bit ketimbang mode karakter (seperti yang dilakukan pada cipher sibstitusi atau cipher transposisi dari algoritma kriptografi klasik).  Operasi dalam mode bit berarti semua data dan informasi  (baik kunci, plaintext maupun ciphertext) dinyatakan dalam rangkaian (string) bit binner, 0 dan 1. Algoritma enkripsi dan deskripsi memproses semua data dan informasi dalam bentuk mode bit. Rangkaian bit yang menyatakan plaintext dienkripsi menjadi ciphertext  dalam bentuk rangkaian bit, demikian sebaliknya.</p>
-          <p class="justify" style="text-indent: 0.5in;">Enkripsi modern berbeda dengan enkripsi konvensional. Enkripsi modern sudah menggunakan komputer untuk pengoperasiannya, berfungsi untuk mengamankan data baik yang ditransfer melalui jaringan komputer maupun yang bukan. Hal ini sangat berguna untuk melindungi privacy, data integrity, authentication, dan non-repudiation. Perkembangan algoritma kriptografi modern berbasis bit didorong oleh penggunaan komputer digital yang merepresentasikan data dalam bentuk biner.
-            Pengirim pesan akan mengatur sandi pada pesan awal yang nantinya menjadi kode dan hanya bisa dibaca oleh penerima pesan tersebut. Kemudian, penerima pesan akan mengembalikan kode-kode yang didapatkan menjadi pesan asli.</p>
+          <p class="justify" style="text-indent: 0.5in;">Kriptografi merupakan ilmu yang mempelajari teknik-teknik matematika yang berhubungan dengan aspek keamanan informasi seperti 
+            kerahasian data, keabsahan data, integritas data serta autentikasi data. Secara umum yang kita ketahui, kriptografi terdiri atas dua buah bagian utama yang penting yaitu 
+            bagian enkripsi dan bagian deskripsi. Enkripsi merupakan proses transformasi informasi atau plaintext menjadi bentuk lain sehingga isi pesan yang sebenarnya tidak dapat 
+            dipahami atau sering disebut ciphertext,hal ini dimaksudkan agar informasi tetap terlindung dari pihak yang tidak berhak menerima. Sedangkan, pengertian Deskripsi adalah 
+            proses kebalikan dari enkripsi, yaitu  transformasi data ke data bentuk semula gambaran umum proses enkripsi dan deskripsi ditunjukkan oleh gambar berikut
+            <p class="center"><img src="assets/img/kriptografi.jpg" class="img-fluid" alt=""></p>
+          <p class="justify" style="text-indent: 0.5in;">Algoritma kriptografi modern umumnya beroperasi dalam mode bit ketimbang mode karakter (seperti yang dilakukan pada cipher sibstitusi atau cipher transposisi dari 
+            algoritma kriptografi klasik).  Operasi dalam mode bit berarti semua data dan informasi  (baik kunci, plaintext maupun ciphertext) dinyatakan dalam rangkaian (string) 
+            bit binner, 0 dan 1. Algoritma enkripsi dan deskripsi memproses semua data dan informasi dalam bentuk mode bit. Rangkaian bit yang menyatakan plaintext dienkripsi menjadi 
+            ciphertext  dalam bentuk rangkaian bit, demikian sebaliknya.</p>
+          <p class="justify" style="text-indent: 0.5in;">Enkripsi modern berbeda dengan enkripsi konvensional. Enkripsi modern sudah menggunakan komputer untuk pengoperasiannya, 
+            berfungsi untuk mengamankan data baik yang ditransfer melalui jaringan komputer maupun yang bukan. Hal ini sangat berguna untuk melindungi privacy, data integrity, 
+            authentication, dan non-repudiation. Perkembangan algoritma kriptografi modern berbasis bit didorong oleh penggunaan komputer digital yang merepresentasikan data dalam 
+            bentuk biner. Pengirim pesan akan mengatur sandi pada pesan awal yang nantinya menjadi kode dan hanya bisa dibaca oleh penerima pesan tersebut. Kemudian, penerima pesan 
+            akan mengembalikan kode-kode yang didapatkan menjadi pesan asli.</p>
         </div>
       </div>
     </section><!-- End App Features Section -->
@@ -264,6 +276,24 @@
           </div>
         </div>
         </section>
+
+        <div id="publickey"  class="row content">
+          <div class="col-md-4" data-aos="fade-right">
+            <img src="assets/img/details-3.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-8 pt-5" data-aos="fade-up">
+            <h3>Public Key</h3>
+            <p class="justify" style="text-indent: 0.5in;">Public Key Encryption adalah Sistem enkripsi (penyandian) yang menggunakan dua kunci, yaitu kunci publik dan kunci privat. 
+              Kunci publik diberitahukan oleh pemilik dan digunakan oleh semua orang yang ingin 
+              mengirimkan pesan terenkripsi kepada pemilik kunci. Kunci privat digunakan oleh 
+              pemilik kunci untuk membuka pesan terenkripsi yang ia terima.</p>
+              <p class="justify" style="text-indent: 0.5in;">Public Key Encryption – Enkripsi kunci publik, atau kriptografi kunci publik, 
+              adalah metode mengenkripsi data dengan dua kunci berbeda dan membuat salah satu kunci, kunci publik, tersedia bagi siapa saja 
+              untuk digunakan. Kunci lainnya dikenal sebagai kunci pribadi. Data yang dienkripsi dengan kunci publik hanya dapat didekripsi 
+              dengan kunci pribadi, dan data dienkripsi dengan kunci pribadi hanya dapat didekripsi dengan kunci publik. Enkripsi kunci publik 
+              juga dikenal sebagai enkripsi asimetris. Ini banyak digunakan, terutama untuk TLS / SSL, yang memungkinkan HTTPS.</p>          
+          </div>
+        </div>
 
     <div class="container py-4">
       <div class="copyright">
